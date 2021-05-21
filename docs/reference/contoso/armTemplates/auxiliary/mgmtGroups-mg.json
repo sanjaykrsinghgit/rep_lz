@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "topLevelManagementGroupPrefix": {
@@ -43,7 +43,7 @@
             // Create management group for platform management groups
             "type": "Microsoft.Management/managementGroups",
             "apiVersion": "2020-05-01",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').platform]",
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').platform]",
@@ -58,7 +58,7 @@
             // Create management group for landing zones
             "type": "Microsoft.Management/managementGroups",
             "apiVersion": "2020-05-01",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').landingZone]",
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').landingZone]",
@@ -73,7 +73,7 @@
             // Create management group for sandbox subscriptions
             "type": "Microsoft.Management/managementGroups",
             "apiVersion": "2020-05-01",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').sandboxes]",
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').sandboxes]",
@@ -88,7 +88,7 @@
             // Create management group for decommissioned subscriptions
             "type": "Microsoft.Management/managementGroups",
             "apiVersion": "2020-05-01",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').decommissioned]",
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').decommissioned]",
@@ -103,7 +103,7 @@
             // Create child management groups for platform resources
             "condition": "[not(empty(parameters('platformMgs')))]",
             "type": "Microsoft.Management/managementGroups",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "apiVersion": "2020-05-01",
             "name": "[concat(parameters('topLevelManagementGroupPrefix'), '-', parameters('platformMgs')[copyIndex()])]",
             "copy": {
@@ -123,7 +123,7 @@
             // Create child management groups for landing zones
             "condition": "[not(empty(parameters('landingZoneMgs')))]",
             "type": "Microsoft.Management/managementGroups",
-            "scope": "[concat('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
+            "scope": "/",
             "apiVersion": "2020-05-01",
             "name": "[concat(parameters('topLevelManagementGroupPrefix'), '-', parameters('landingZoneMgs')[copyIndex()])]",
             "copy": {
