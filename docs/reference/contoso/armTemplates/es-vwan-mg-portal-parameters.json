@@ -1,0 +1,188 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "enterpriseScaleCompanyPrefix": {
+      "value": "old-mg"
+    },
+    "managementSubscriptionId": {
+      "value": "035f3891-2d42-41cc-8e7d-71ec904d4980"
+    },
+    "connectivitySubscriptionId": {
+      "value": ""
+    },
+    "identitySubscriptionId": {
+      "value": ""
+    },
+    "denySubnetWithoutNsgForIdentity": {
+      "value": "No"
+    },
+    "denyRdpForIdentity": {
+      "value": "No"
+    },
+    "denyPipForIdentity": {
+      "value": "No"
+    },
+    "enableVmBackupForIdentity": {
+      "value": "No"
+    },
+    "onlineLzSubscriptionId": {
+      "value": []
+    },
+    "corpLzSubscriptionId": {
+      "value": [
+        "1b67375a-eee0-4a74-89aa-9e8d04483fbb"
+      ]
+    },
+    "enableLogAnalytics": {
+      "value": "No"
+    },
+    "retentionInDays": {
+      "value": "30"
+    },
+    "enableAsc": {
+      "value": "No"
+    },
+    "enableAksPolicy": {
+      "value": "No"
+    },
+    "emailContactAsc": {
+      "value": ""
+    },
+    "enableAscForServers": {
+      "value": "Free"
+    },
+    "enableAscForAppServices": {
+      "value": "Free"
+    },
+    "enableAscForStorage": {
+      "value": "Free"
+    },
+    "enableAscForSql": {
+      "value": "Free"
+    },
+    "enableAscForSqlOnVm": {
+      "value": "Free"
+    },
+    "enableAscForKeyVault": {
+      "value": "Free"
+    },
+    "enableAscForArm": {
+      "value": "Free"
+    },
+    "enableAscForDns": {
+      "value": "Free"
+    },
+    "enableAscForKubernetes": {
+      "value": "Free"
+    },
+    "enableAscForRegistries": {
+      "value": "Free"
+    },
+    "denyAksPrivileged": {
+      "value": "No"
+    },
+    "denyAksPrivilegedEscalation": {
+      "value": "No"
+    },
+    "denyHttpIngressForAks": {
+      "value": "No"
+    },
+    "enableArcMonitoring": {
+      "value": "No"
+    },
+    "enableVmMonitoring": {
+      "value": "No"
+    },
+    "enableVmssMonitoring": {
+      "value": "No"
+    },
+    "enableSecuritySolution": {
+      "value": "No"
+    },
+    "enableAgentHealth": {
+      "value": "No"
+    },
+    "enableChangeTracking": {
+      "value": "No"
+    },
+    "enableUpdateMgmt": {
+      "value": "No"
+    },
+    "enableActivityLog": {
+      "value": "No"
+    },
+    "enableVmInsights": {
+      "value": "No"
+    },
+    "enableServiceMap": {
+      "value": "No"
+    },
+    "enableSqlAssessment": {
+      "value": "No"
+    },
+    "enableSqlAudit": {
+      "value": "No"
+    },
+    "enableSqlEncryption": {
+      "value": "No"
+    },
+    "enableVmBackup": {
+      "value": "No"
+    },
+    "denyRdp": {
+      "value": "No"
+    },
+    "enableStorageHttps": {
+      "value": "No"
+    },
+    "denyIpForwarding": {
+      "value": "No"
+    },
+    "denySubnetWithoutNsg": {
+      "value": "No"
+    },
+    "addressPrefix": {
+      "value": ""
+    },
+    "enableVpnGw": {
+      "value": "No"
+    },
+    "enableErGw": {
+      "value": "No"
+    },
+    "location": {
+      "value": "[deployment().location]"
+    },
+    "enableVwan": {
+      "value": "No"
+    },
+    "enableAzFw": {
+      "value": "No"
+    },
+    "paToken": {
+      "value": ""
+    },
+    "principalId": {
+      "value": []
+    },
+    "appId": {
+      "value": ""
+    },
+    "principalSecret": {
+      "value": ""
+    },
+    "gitHubUserNameOrOrg": {
+      "value": ""
+    },
+    "repositoryName": {
+      "value": ""
+    },
+    "enableAzOps": {
+      "value": "No"
+    },
+    "subscriptionId": {
+      "value": "035f3891-2d42-41cc-8e7d-71ec904d4980"
+    }
+  }
+}
