@@ -45,9 +45,6 @@
             "apiVersion": "2020-05-01",
             "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').platform]",
-            "dependsOn": [
-                "[tenantResourceId('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]"
-            ],
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').platform]",
                 "details": {
@@ -63,9 +60,6 @@
             "apiVersion": "2020-05-01",
             "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').landingZone]",
-            "dependsOn": [
-                "[tenantResourceId('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]"
-            ],
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').landingZone]",
                 "details": {
@@ -81,9 +75,6 @@
             "apiVersion": "2020-05-01",
             "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').sandboxes]",
-            "dependsOn": [
-                "[tenantResourceId('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]"
-            ],
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').sandboxes]",
                 "details": {
@@ -99,9 +90,6 @@
             "apiVersion": "2020-05-01",
             "scope": "/",
             "name": "[variables('enterpriseScaleManagementGroups').decommissioned]",
-            "dependsOn": [
-                "[tenantResourceId('Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]"
-            ],
             "properties": {
                 "displayName": "[variables('enterpriseScaleManagementGroups').decommissioned]",
                 "details": {
