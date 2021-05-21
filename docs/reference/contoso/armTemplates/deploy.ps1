@@ -7,7 +7,7 @@ $user = Get-AzADUser -UserPrincipalName (Get-AzContext).Account
 New-AzRoleAssignment -Scope '/' -RoleDefinitionName 'Owner' -ObjectId $user.Id
 
 New-AzManagementGroupDeployment `
-  -Name demoMGDeployment `
+  -Name old-mg `
   -Location "UK South" `
   -ManagementGroupId "old-mg" `
   -TemplateUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg.json" `
