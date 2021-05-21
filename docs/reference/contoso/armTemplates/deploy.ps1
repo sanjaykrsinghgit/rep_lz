@@ -10,5 +10,6 @@ New-AzManagementGroupDeployment `
   -Name demoMGDeployment `
   -Location "UK South" `
   -ManagementGroupId "old-mg" `
-  -TemplateFile "es-vwan-mg.json" `
-  -TemplateParameterFile "es-vwan-mg-portal-parameters.json"
+  -TemplateUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg.json" `
+  -TemplateParameterUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg-portal-parameters.json" `
+  -WhatIf
