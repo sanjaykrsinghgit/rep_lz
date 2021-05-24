@@ -45,6 +45,18 @@
                                     "uri": "https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization"
                                 }
                             }
+                        },
+                        {
+                            "name": "esMgmtGroup",
+                            "type": "Microsoft.Common.TextBox",
+                            "label": "Management Group prefix",
+                            "toolTip": "Provide a prefix (max 10 characters, unique at tenant-scope) for the Management Group hierarchy and other resources created as part of Enterprise-scale.",
+                            "defaultValue": "",
+                            "constraints": {
+                                "required": true,
+                                "regex": "^[a-z0-9A-Z-]{1,10}$",
+                                "validationMessage": "The prefix must be 1-10 characters."
+                            }
                         }
                     ]
                 },
@@ -1464,6 +1476,7 @@
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
+            "kind": "Tenant",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
