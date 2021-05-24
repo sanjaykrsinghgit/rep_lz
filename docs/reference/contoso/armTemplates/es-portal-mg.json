@@ -1428,11 +1428,11 @@
                 "appId": "[steps('lzDevOps').spnSection.esServicePrincipal.appId]",
                 "enableAzOps": "[steps('lzDevOps').cicdOption]",
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
-                "repositoryName": "[steps('lzDevOps').esGitRepoName]"
+                "repositoryName": "[steps('lzDevOps').esGitRepoName]",
+                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.value]"
             },
             "kind": "Tenant",
-            "location": "[steps('basics').resourceScope.location.name]",
-            "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.value]"
+            "location": "[steps('basics').resourceScope.location.name]"
         }
     }
 }
