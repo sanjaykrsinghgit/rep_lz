@@ -1429,7 +1429,7 @@
                 "enableAzOps": "[steps('lzDevOps').cicdOption]",
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]",
-                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.ManagementGroup.name]"
+                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.managementGroup.name]"
             },
             "kind": "ManagementGroup",
             "location": "[steps('basics').resourceScope.location.name]"
