@@ -7,13 +7,7 @@
             "steps": [
                 {
                     "name": "basics",
-                    "label": "Basics",
-                    "elements": [
-                        {
-                            "name": "resourceScope",
-                            "type": "Microsoft.Common.ResourceScope"
-                        }
-                    ]
+                    "label": "Basics"
                 },
                 {
                     "name": "lzSettings",
