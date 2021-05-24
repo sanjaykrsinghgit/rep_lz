@@ -1439,7 +1439,7 @@
                 "enableVmInsights": "[steps('esGoalState').esVmInsights]",
                 "enableServiceMap": "[steps('esGoalState').esServiceMap]",
                 "enableSqlAssessment": "[steps('esGoalState').esSqlAssessment]",
-                "enterpriseScaleCompanyPrefix": "[steps('lzSettings').esMgmt]",
+                "enterpriseScaleCompanyPrefix": "[steps('lzSettings').esMgmtGroup]",
                 "enableSqlAudit": "[steps('lzGoalState').esSqlAudit]",
                 "enableSqlEncryption": "[steps('lzGoalState').esSqlEncryption]",
                 "enableVmBackup": "[steps('lzGoalState').esAzBackup]",
@@ -1464,7 +1464,6 @@
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
-            "kind": "Tenant",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
