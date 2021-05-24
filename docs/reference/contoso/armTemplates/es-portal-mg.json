@@ -1429,7 +1429,7 @@
                 "enableAzOps": "[steps('lzDevOps').cicdOption]",
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]",
-                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.value]"
+                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.location.name]"
             },
             "kind": "Tenant",
             "location": "[steps('basics').resourceScope.location.name]"
