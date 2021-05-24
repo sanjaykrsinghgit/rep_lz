@@ -574,6 +574,7 @@
         {
             "condition": "[not(empty(parameters('identitySubscriptionId')))]",
             "type": "Microsoft.Management/managementGroups/subscriptions",
+            "scope": "/",
             "apiVersion": "2020-05-01",
             "name": "[if(not(empty(parameters('identitySubscriptionId'))), variables('identityMoveSubscription'), variables('noIdentitySubscription'))]",
             "dependsOn": [
@@ -584,6 +585,7 @@
         {
             "condition": "[not(empty(parameters('onlineLzSubscriptionId')))]",
             "type": "Microsoft.Management/managementGroups/subscriptions",
+            "scope": "/",
             "apiVersion": "2020-05-01",
             "name": "[if(not(empty(parameters('onlineLzSubscriptionId'))), concat(parameters('enterpriseScaleCompanyPrefix'), '-online', '/', parameters('onlineLzSubscriptionId')[copyIndex()]), variables('noOnlineLzSubscription'))]",
             "dependsOn": [
@@ -598,6 +600,7 @@
         {
             "condition": "[not(empty(parameters('corpLzSubscriptionId')))]",
             "type": "Microsoft.Management/managementGroups/subscriptions",
+            "scope": "/",
             "apiVersion": "2020-05-01",
             "name": "[if(not(empty(parameters('corpLzSubscriptionId'))), concat(parameters('enterpriseScaleCompanyPrefix'), '-corp', '/', parameters('corpLzSubscriptionId')[copyIndex()]), variables('noCorpLzSubscription'))]",
             "dependsOn": [
