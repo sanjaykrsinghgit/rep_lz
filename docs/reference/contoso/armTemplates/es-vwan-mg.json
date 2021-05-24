@@ -520,8 +520,8 @@
             "location": "[deployment().location]",
             "scope": "/",
             "dependsOn": [
-                "[variables('deploymentNames').mgmtGroupDeploymentName]",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
+                "[variables('deploymentNames').mgmtGroupDeploymentName]"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
             ],
             "properties": {
                 "mode": "Incremental",
@@ -543,8 +543,8 @@
             "location": "[deployment().location]",
             "scope": "/",
             "dependsOn": [
-                "[variables('deploymentNames').policyDeploymentName]",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
+                "[variables('deploymentNames').policyDeploymentName]"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
             ],
             "copy": {
                 "batchSize": 1,
@@ -619,8 +619,8 @@
             "name": "[variables('deploymentNames').monitoringDeploymentName]",
             "dependsOn": [
                 "[variables('deploymentNames').policyDeploymentName]",
-                "policyCompletion",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-management')]"
+                "policyCompletion"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-management')]"
             ],
             "location": "[deployment().location]",
             "properties": {
@@ -703,8 +703,8 @@
             "name": "[variables('deploymentNames').identityDeploymentName]",
             "dependsOn": [
                 "[variables('deploymentNames').policyDeploymentName]",
-                "policyCompletion",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-identity')]"
+                "policyCompletion"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-identity')]"
             ],
             "location": "[deployment().location]",
             "properties": {
@@ -740,8 +740,8 @@
             "name": "[variables('deploymentNames').lzDeploymentName]",
             "dependsOn": [
                 "[variables('deploymentNames').policyDeploymentName]",
-                "policyCompletion",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-landingzones')]"
+                "policyCompletion"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-landingzones')]"
             ],
             "location": "[deployment().location]",
             "properties": {
@@ -797,8 +797,8 @@
             "scope": "/",
             "name": "[variables('deploymentNames').diagAndSecDeploymentName]",
             "dependsOn": [
-                "[variables('deploymentNames').monitoringDeploymentName]",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
+                "[variables('deploymentNames').monitoringDeploymentName]"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
             ],
             "location": "[deployment().location]",
             "properties": {
@@ -896,8 +896,8 @@
             "name": "[variables('deploymentNames').connectivityDeploymentName]",
             "dependsOn": [
                 "[variables('deploymentNames').diagAndSecDeploymentName]",
-                "policyCompletion",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-connectivity')]"
+                "policyCompletion"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'), '-connectivity')]"
             ],
             "location": "[deployment().location]",
             "properties": {
@@ -950,8 +950,8 @@
                 "[variables('deploymentNames').policyDeploymentName]",
                 "[variables('deploymentNames').connectivityDeploymentName]",
                 "[variables('deploymentNames').identityDeploymentName]",
-                "policyCompletion",
-                "[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
+                "policyCompletion"
+                //"[concat('Microsoft.Management/managementGroups/', parameters('enterpriseScaleCompanyPrefix'))]"
             ],
             "properties": {
                 "mode": "Incremental",
