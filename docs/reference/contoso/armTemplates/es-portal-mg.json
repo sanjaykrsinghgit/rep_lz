@@ -62,7 +62,7 @@
                             "multiselect": false,
                             "multiLine": true,
                             "constraints": {
-                                "allowedValues": "[map(steps('lzSettings').mgmtApi.value, (mgmt) => parse(concat('{\"label\":\"', mgmt.name, '\",\"description\":\"', mgmt.name, '\",\"value\":\"', mgmt.name, '\"}')) )]",
+                                "allowedValues": "[map(steps('lzSettings').mgmtApi.value, (mgmt) => parse(concat('{\"label\":\"', mgmt.name, '\",\"description\":\"', mgmt.properties.displayName, '\",\"value\":\"', mgmt.properties.displayName, '\"}')) )]",
                                 "required": true
                             }
                         }
