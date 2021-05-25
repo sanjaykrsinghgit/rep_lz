@@ -1431,8 +1431,7 @@
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
             "kind": "ManagementGroup",
-            "location": "[steps('basics').resourceScope.location.name]",
-            "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.location.name]"
+            "location": "[steps('basics').resourceScope.location.name]"
         }
     }
 }
