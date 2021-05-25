@@ -1428,6 +1428,7 @@
                 "appId": "[steps('lzDevOps').spnSection.esServicePrincipal.appId]",
                 "enableAzOps": "[steps('lzDevOps').cicdOption]",
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
+                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.location.name]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
             "kind": "ManagementGroup",
