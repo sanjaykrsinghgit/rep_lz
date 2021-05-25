@@ -16,51 +16,6 @@
                     ]
                 },
                 {
-                    "name": "lzSettings",
-                    "label": "Enterprise-Scale company prefix",
-                    "subLabel": {
-                        "preValidation": "Provide a company prefix for the management group structure that will be created.",
-                        "postValidation": "Done"
-                    },
-                    "bladeTitle": "Company prefix",
-                    "elements": [
-                        {
-                            "name": "infoBox1",
-                            "type": "Microsoft.Common.InfoBox",
-                            "visible": true,
-                            "options": {
-                                "text": "Enterprise-Scale ARM deployment requires access at the tenant root (/) scope. Visit this link to ensure you have the appropriate RBAC permission to complete the deployment",
-                                "uri": "https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin",
-                                "style": "Info"
-                            }
-                        },
-                        {
-                            "name": "textBlock0",
-                            "type": "Microsoft.Common.TextBlock",
-                            "visible": true,
-                            "options": {
-                                "text": "Enterprise-Scale will create the management group hierarchy under the Tenant Root Group with the prefix provided at this step.",
-                                "link": {
-                                    "label": "Learn more",
-                                    "uri": "https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization"
-                                }
-                            }
-                        },
-                        {
-                            "name": "esMgmtGroup",
-                            "type": "Microsoft.Common.TextBox",
-                            "label": "Management Group prefix",
-                            "toolTip": "Provide a prefix (max 10 characters, unique at tenant-scope) for the Management Group hierarchy and other resources created as part of Enterprise-scale.",
-                            "defaultValue": "",
-                            "constraints": {
-                                "required": true,
-                                "regex": "^[a-z0-9A-Z-]{1,10}$",
-                                "validationMessage": "The prefix must be 1-10 characters."
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "esGoalState",
                     "label": "Platform management, security, and governance",
                     "subLabel": {
@@ -1451,7 +1406,7 @@
                 "enableVmInsights": "[steps('esGoalState').esVmInsights]",
                 "enableServiceMap": "[steps('esGoalState').esServiceMap]",
                 "enableSqlAssessment": "[steps('esGoalState').esSqlAssessment]",
-                "enterpriseScaleCompanyPrefix": "[steps('lzSettings').esMgmtGroup]",
+                "enterpriseScaleCompanyPrefix": "'hello'",
                 "enableSqlAudit": "[steps('lzGoalState').esSqlAudit]",
                 "enableSqlEncryption": "[steps('lzGoalState').esSqlEncryption]",
                 "enableVmBackup": "[steps('lzGoalState').esAzBackup]",
@@ -1476,7 +1431,7 @@
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
-            "kind": "ManagementGroup",
+            "kind": "Tenant",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
