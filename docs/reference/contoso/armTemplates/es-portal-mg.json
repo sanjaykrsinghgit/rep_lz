@@ -1432,7 +1432,7 @@
             },
             "kind": "ManagementGroup",
             "location": "[steps('basics').resourceScope.location.name]",
-            "enterpriseScaleCompanyPrefix": "[steps('esGoalState').esAscEmail]"
+            "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.location.name]"
         }
     }
 }
