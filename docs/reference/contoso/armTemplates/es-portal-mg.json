@@ -1429,9 +1429,9 @@
                 "enableAzOps": "[steps('lzDevOps').cicdOption]",
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]",
-                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.managementGroup.name]"
+                "enterpriseScaleCompanyPrefix": "Hello"
             },
-            "kind": "Tenant",
+            "kind": "ManagementGroup",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
