@@ -1430,7 +1430,7 @@
                 "subscriptionId": "[steps('esGoalState').esMgmtSub]",
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]"
             },
-            "kind": "Tenant",
+            "kind": "ManagementGroup",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
