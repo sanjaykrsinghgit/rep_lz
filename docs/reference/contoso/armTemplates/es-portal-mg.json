@@ -1431,7 +1431,7 @@
                 "repositoryName": "[steps('lzDevOps').esGitRepoName]",
                 "enterpriseScaleCompanyPrefix": "Hello"
             },
-            "kind": "ManagementGroup",
+            "kind": "Tenant",
             "location": "[steps('basics').resourceScope.location.name]"
         }
     }
