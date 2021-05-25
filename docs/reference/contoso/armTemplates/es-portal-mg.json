@@ -1406,7 +1406,7 @@
                 "enableVmInsights": "[steps('esGoalState').esVmInsights]",
                 "enableServiceMap": "[steps('esGoalState').esServiceMap]",
                 "enableSqlAssessment": "[steps('esGoalState').esSqlAssessment]",
-                "enterpriseScaleCompanyPrefix": "'hello'",
+                "enterpriseScaleCompanyPrefix": "[steps('basics').resourceScope.location.name]",
                 "enableSqlAudit": "[steps('lzGoalState').esSqlAudit]",
                 "enableSqlEncryption": "[steps('lzGoalState').esSqlEncryption]",
                 "enableVmBackup": "[steps('lzGoalState').esAzBackup]",
