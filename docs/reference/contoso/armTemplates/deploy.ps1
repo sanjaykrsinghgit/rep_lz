@@ -20,3 +20,8 @@ New-AzManagementGroupDeployment `
   -ManagementGroupId "old-mg" `
   -TemplateUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg.json" `
   -TemplateParameterUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg-portal-parameters.json"
+
+
+  remove-azroleassignment -scope / -objectId 39a368c8-d73a-4c59-9ff7-97ac13e8150a -roledefinitionname Owner
+
+  new-azroleassignment -scope / -objectId 39a368c8-d73a-4c59-9ff7-97ac13e8150a -roledefinitionname Owner
