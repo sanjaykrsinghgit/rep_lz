@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "old-mg"
+      "value": "old-4-mg"
     },
     "managementSubscriptionId": {
       "value": "035f3891-2d42-41cc-8e7d-71ec904d4980"
