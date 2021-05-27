@@ -27,120 +27,120 @@
       "value": "No"
     },
     "onlineLzSubscriptionId": {
-      "value": []
-    },
-    "corpLzSubscriptionId": {
       "value": [
         "1b67375a-eee0-4a74-89aa-9e8d04483fbb"
       ]
     },
+    "corpLzSubscriptionId": {
+      "value": []
+    },
     "enableLogAnalytics": {
-      "value": "No"
+      "value": "Yes"
     },
     "retentionInDays": {
       "value": "30"
     },
     "enableAsc": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableAksPolicy": {
       "value": "No"
     },
     "emailContactAsc": {
-      "value": ""
+      "value": "maksh@microsoft.com"
     },
     "enableAscForServers": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForAppServices": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForStorage": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForSql": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForSqlOnVm": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForKeyVault": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForArm": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForDns": {
-      "value": "Free"
+      "value": "Standard"
     },
     "enableAscForKubernetes": {
       "value": "Free"
     },
     "enableAscForRegistries": {
-      "value": "Free"
+      "value": "Standard"
     },
     "denyAksPrivileged": {
-      "value": "No"
+      "value": "Yes"
     },
     "denyAksPrivilegedEscalation": {
-      "value": "No"
+      "value": "Yes"
     },
     "denyHttpIngressForAks": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableArcMonitoring": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableVmMonitoring": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableVmssMonitoring": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSecuritySolution": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableAgentHealth": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableChangeTracking": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableUpdateMgmt": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableActivityLog": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableVmInsights": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableServiceMap": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSqlAssessment": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSqlAudit": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableSqlEncryption": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableVmBackup": {
-      "value": "No"
+      "value": "Yes"
     },
     "denyRdp": {
-      "value": "No"
+      "value": "Yes"
     },
     "enableStorageHttps": {
-      "value": "No"
+      "value": "Yes"
     },
     "denyIpForwarding": {
-      "value": "No"
+      "value": "Yes"
     },
     "denySubnetWithoutNsg": {
-      "value": "No"
+      "value": "Yes"
     },
     "addressPrefix": {
       "value": ""
