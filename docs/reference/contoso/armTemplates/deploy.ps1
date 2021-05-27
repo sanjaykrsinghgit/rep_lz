@@ -1,5 +1,6 @@
 cd .\Enterprise-Scale\docs\reference\contoso\armTemplates
 
+Disconnect-AzAccount
 Connect-AzAccount
 
 $user = Get-AzADUser -UserPrincipalName (Get-AzContext).Account
@@ -15,7 +16,7 @@ New-AzManagementGroupDeployment `
   -WhatIf
 
   New-AzManagementGroupDeployment `
-  -Name old-4-mg `
+  -Name old-5-mg `
   -Location "uksouth" `
   -ManagementGroupId "old-4-mg" `
   -TemplateUri "https://raw.githubusercontent.com/Mahesh-MSFT/Enterprise-Scale/deploy-at-mg/docs/reference/contoso/armTemplates/es-vwan-mg.json" `
