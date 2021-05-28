@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "TAF-FMO"
+      "value": "tafnew"
     },
     "managementSubscriptionId": {
       "value": "b4fdb68b-dfb2-4a38-bb44-8c47839f6ab7"
