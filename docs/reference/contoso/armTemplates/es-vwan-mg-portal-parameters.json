@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "enterpriseScaleCompanyPrefix": {
-      "value": "TAF-FMO"
+      "value": "old-3-mg"
     },
     "managementSubscriptionId": {
-      "value": "b4fdb68b-dfb2-4a38-bb44-8c47839f6ab7"
+      "value": "035f3891-2d42-41cc-8e7d-71ec904d4980"
     },
     "connectivitySubscriptionId": {
       "value": ""
@@ -28,11 +28,11 @@
     },
     "onlineLzSubscriptionId": {
       "value": [
-        ""
+        "1b67375a-eee0-4a74-89aa-9e8d04483fbb"
       ]
     },
     "corpLzSubscriptionId": {
-      "value": [""]
+      "value": []
     },
     "enableLogAnalytics": {
       "value": "Yes"
@@ -47,7 +47,7 @@
       "value": "No"
     },
     "emailContactAsc": {
-      "value": "sanjay.singh27@Infosys.com"
+      "value": "maksh@microsoft.com"
     },
     "enableAscForServers": {
       "value": "Standard"
@@ -182,7 +182,7 @@
       "value": "No"
     },
     "subscriptionId": {
-      "value": "b4fdb68b-dfb2-4a38-bb44-8c47839f6ab7"
+      "value": "035f3891-2d42-41cc-8e7d-71ec904d4980"
     }
   }
 }
